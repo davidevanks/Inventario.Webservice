@@ -107,6 +107,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\RegistroEmpresasController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -124,8 +125,17 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Inventario.Datos\Inventario.Datos.csproj">
+      <Project>{f2030f7c-1fd7-4ec8-a447-2dfcccb536d7}</Project>
+      <Name>Inventario.Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inventario.Entity\Inventario.Entity.csproj">
+      <Project>{7f5070c6-fbde-453a-ac29-174161e7f986}</Project>
+      <Name>Inventario.Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
